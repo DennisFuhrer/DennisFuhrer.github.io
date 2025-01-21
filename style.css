@@ -1,0 +1,81 @@
+html, body {
+    height: 100%; /* Volle Höhe */
+    margin: 0; /* Standard-Ränder entfernen */
+    padding: 0; /* Standard-Paddings entfernen */
+    overflow: hidden; /* Kein Scrollen erlauben */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; 
+    font-weight: bolder;
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto; 
+    font-weight: bolder;
+    color: white;
+}
+
+button {
+    font-size: 1.3em;
+    background-color: rgb(1, 167, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    height: 5vh;
+    width: 40vw;
+}
+
+.buttons {
+    margin-top: 4vh;
+    justify-content: space-evenly;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.zielOrt {
+    text-align: center;
+}
+
+.fullscreen {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1259px) {
+    .fullscreen { 
+       background-image: url(./background.jpg);
+    }
+}
+ 
+@media (min-width:1260px) {
+    .fullscreen { 
+       background-image: url(./background.jpg); 
+    }
+}
+
+.dogGif {
+    height: 25vh;
+    border-radius: 2vw;
+}
